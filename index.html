@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TCP Congestion Test</title>
+        <link href="./node_modules/c3/c3.css" rel="stylesheet">
+        <style>
+            html {
+                font-size: 16px;
+            }
+            body {
+                padding: 2rem;
+            }
+            .box {
+                padding: 1rem;
+                margin-bottom: 1rem;
+                border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h3>Host Window Size</h3>
+            <div id="window-size"></div>
+        </div>
+        <div class="box">
+            <h3>Stacked Window Size</h3>
+            <div id="stacked-window-size"></div>
+        </div>
+        <div class="box">
+            <h3>Congestion</h3>
+            <div id="congestion"></div>
+        </div>
+    </body>
+    <script src="./node_modules/d3/dist/d3.min.js"></script>
+    <script src="./node_modules/c3/c3.min.js"></script>
+    <script src="./index.js"></script>
+</html>
